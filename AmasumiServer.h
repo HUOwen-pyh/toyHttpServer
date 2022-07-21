@@ -10,7 +10,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 
-
+//use singleton pattern to design server class
 class amasumiHttpServer {
 
 private:

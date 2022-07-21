@@ -8,11 +8,13 @@
 #include <netinet/in.h>
 #include "AmasumiServer.h"
 
+
+
 int main(void){
 
-	amasumiHttpServer* Server = amasumiHttpServer::getServer();
-	Server->serverExec();
-	amasumiHttpServer::destoryServer();
+	amasumiHttpServer* Server = amasumiHttpServer::getServer(); //get instance of server
+	Server->serverExec();										//start the server
+	amasumiHttpServer::destoryServer();                         //free the pointer
 	return 0;
 
 }
